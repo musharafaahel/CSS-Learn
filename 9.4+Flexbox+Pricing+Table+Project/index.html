@@ -20,6 +20,7 @@
         height: 100vh;
         align-items: center;
         gap: 20px;
+        flex-basis: 400px;
       }
 
       .pricing-plan {
@@ -61,6 +62,14 @@
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+        .pricing-container {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+      .pricing-plan {
+        min-width: 300px;
       }
     </style>
   </head> 
